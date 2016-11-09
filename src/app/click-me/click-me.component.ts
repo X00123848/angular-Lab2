@@ -11,11 +11,12 @@ export class ClickMeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+onClickMe(myMessage: string) {
+    this.clickMessage = myMessage;
   }
 
-  onClickMe(){
-    this.clickMessage = "You clicked the button!";
+  
+  ngOnInit() {
   }
 
 }

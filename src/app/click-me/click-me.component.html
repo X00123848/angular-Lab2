@@ -1,5 +1,8 @@
 <p>
-  <button (click)="onClickMe()">Click Me!</button>
+  <input #myMessage myMessage.value='' />
+
+  <button (click)="onClickMe(myNessage.value)">Click Me!</button>
 </p>
-<p>{{clickMessage}}</p>
+
+<h3 class="message">{{clickMessage}}</h3>
 
